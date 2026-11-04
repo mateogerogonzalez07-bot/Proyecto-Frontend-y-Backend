@@ -22,11 +22,7 @@ const messageSchema = new Schema({
         required: [true, "El mensaje es obligatorio"],
         trim: true
     },
-    requiere: {
-        type: String,
-        required: [true, "El mensaje es obligatorio"],
-        trim: true
-    },
+   
     leido: {
         type: Boolean,
         default: false,
