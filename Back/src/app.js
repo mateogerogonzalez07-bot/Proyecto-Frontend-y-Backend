@@ -35,6 +35,9 @@ app.use(`/${CARPETA_IMAGENES}`, express.static(CARPETA_IMAGENES))
 // ==========================================
 //  RUTAS DE LA CONSTRUCTORA
 // ==========================================
+app.get("/", (req, res) => {
+    res.json({ mensaje: "DG Mantenimiento Integral - API Backend funcionando correctamente 🚀" });
+})
 app.use("/api/auth", userRoutes)         // Login para vos/tu papá
 app.use("/api/projects", projectRoutes) // Galería de obras y reformas
 app.use('/api/messages', messageRoutes) // Contacto para tus clientes
