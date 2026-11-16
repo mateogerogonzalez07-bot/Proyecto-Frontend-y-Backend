@@ -1,11 +1,29 @@
 import express from 'express'
 import cors from "cors"
+import { conectarDB } from './db.js'
+
 const app = express();
 
-// CORS: permite que tu Front en React se conecte sin bloqueos
-app.use(cors())
+app.use(cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Middleware para asegurar conexión en cada petición (Vercel serverless)
+app.use(async (req, res, next) => {
+    try {
+        await conectarDB();
+        next();
+    } catch (error) {
+        console.error("Error de conexión en serverless:", error);
+        res.status(500).json({ error: "Error conectando a la base de datos" });
+    }
+});
+
 
 import projectRoutes from "./routes/projectRoutes.js"
 import messageRoutes from "./routes/messageRoutes.js"
