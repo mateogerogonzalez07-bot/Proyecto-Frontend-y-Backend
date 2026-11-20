@@ -1,0 +1,58 @@
+@import './Navbar.css';
+@import './Layout.css';
+@import './Cards.css';
+@import './Gallery.css';
+@import './Contact.css';
+@import './Footer.css';
+@import './Home.css';
+@import './About.css';
+@import './WhatsAppButton.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #eef2f7;
+  color: #101828;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.section-heading {
+  max-width: 860px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.section-heading p {
+  margin: 0 0 8px;
+  color: #174ea6;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #0b145f;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.carousel {
+    width: min(1100px, calc(100% - 32px));
+    max-height: none;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #1E293B;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.2);
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    background-color: #1E293B;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: clamp(280px, 58vh, 620px);
+    margin: auto;
+    object-fit: contain;
+    background-color: #f8fafc;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 12%;
+}
+
+footer > p {
+    margin: 0;
+    padding: 12px;
+    color: white;
+    background-color: #1E293B;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        width: calc(100% - 20px);
+        margin: 24px auto;
+    }
+
+    .carousel-item img {
+        height: 340px;
+    }
+}

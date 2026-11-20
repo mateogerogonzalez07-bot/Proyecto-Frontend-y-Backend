@@ -1,0 +1,152 @@
+.Cards,
+.cards-grid {
+  width: min(1880px, calc(100% - 32px));
+  margin: 0 auto 56px;
+  padding: 4px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.Card,
+.service-card {
+  width: 288px;
+  min-height: 324px;
+  flex: 0 1 288px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: black;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #1e293b;
+  box-shadow: 3px 2px 8px rgba(9, 10, 0, 0.5);
+  transition: transform 0.8s ease-in-out, box-shadow 0.8s ease-in-out, opacity 0.3s ease;
+}
+
+.Card:hover,
+.service-card:hover,
+.service-card.selected {
+  transform: scale(1.04) translate(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.opaco,
+.service-card.selected {
+  opacity: 0.9;
+}
+
+.encabezado-Card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: #d3d3d3;
+}
+
+.img-Card {
+  width: 98px;
+  height: 98px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: white;
+  object-fit: contain;
+}
+
+.cuerpo-Card,
+.service-card-body {
+  flex: 1;
+  width: 100%;
+  min-height: 156px;
+  padding: 28px 25px 18px;
+  background-color: #4682b4;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+.nombre,
+.service-card h3 {
+  margin: 0 0 4px;
+  color: black;
+  font-family: "Playfair Display SC", serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.service-card p {
+  margin: 0 0 2px;
+}
+
+.servicio,
+.service-subtitle {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.descripcion {
+  color: black;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.container-icons,
+.card-actions {
+  width: 100%;
+  margin-top: auto;
+  min-height: 66px;
+  padding: 14px 12px 10px;
+  background-color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary,
+.primary-link {
+  width: auto;
+  min-width: 86px;
+  min-height: 40px;
+  margin: 0 auto;
+  padding: 9px 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 5px;
+  background: royalblue;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn-primary:hover,
+.primary-link:hover {
+  color: white;
+  background: #234fd3;
+}
+
+@media (max-width: 768px) {
+  .Cards,
+  .cards-grid {
+    width: min(100%, calc(100% - 24px));
+    padding: 16px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Card,
+  .service-card {
+    width: min(100%, 300px);
+    flex: initial;
+  }
+}

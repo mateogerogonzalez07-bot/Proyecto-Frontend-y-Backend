@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    flex: 1;
+    height: auto;
+    padding: 40px 16px;
+}
+.formulario {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+  background-color: #1E293B;
+  color: white;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 8px;
+  border: 1px solid #219e08;
+  border-radius: 5px;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+  border: 2px solid #219e08;
+  outline: none;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #17065f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario .reset {
+  background-color: red;
+}
+
+.formulario .enviar {
+  background-color: #4CAF50;
+}
+
+

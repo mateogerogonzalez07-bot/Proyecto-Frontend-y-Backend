@@ -1,0 +1,53 @@
+.about-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 48px auto;
+}
+
+.about-intro {
+  max-width: 860px;
+  margin: 0 auto 34px;
+  padding: 18px;
+  border-radius: 8px;
+  background: cornflowerblue;
+  color: white;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.about-card,
+.map-card {
+  padding: 22px;
+  border-radius: 8px;
+  background: steelblue;
+  color: #050505;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+}
+
+.about-card h3,
+.map-card h3 {
+  margin: 0 0 10px;
+  color: #06104f;
+}
+
+.about-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.map-card {
+  margin-top: 24px;
+  background: white;
+}
+
+.map-card iframe {
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
