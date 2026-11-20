@@ -5,7 +5,7 @@ import ContactPage from './pages/ContactPage.jsx'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import ServiceGalleryPage from './pages/ServiceGalleryPage.jsx'
-import Login from './pages/login.jsx'
+import Login from './pages/Login.jsx'
 import AdminDashboard from './pages/AdminDashboard.jsx'; // (Ajustá la ruta según dónde lo hayas guardado)
 
 function App() {
