@@ -74,7 +74,7 @@ export const services = [
 export const aboutBlocks = [
   {
     title: 'Nuestra historia',
-    text: 'Fundada en el ano 2010, la empresa crecio hasta convertirse en una referencia local en mantenimiento integral.',
+    text: 'Fundada en el año 2010, la empresa crecio hasta convertirse en una referencia local en mantenimiento integral.',
   },
   {
     title: 'Nuestra mision',
@@ -94,7 +94,7 @@ export const aboutBlocks = [
   },
   {
     title: 'Experiencia',
-    text: 'Mas de 10 anos de trabajo nos permiten ofrecer soluciones efectivas y duraderas.',
+    text: 'Mas de 10 años de trabajo nos permiten ofrecer soluciones efectivas y duraderas.',
   },
 ]
 

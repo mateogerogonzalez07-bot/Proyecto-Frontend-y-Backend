@@ -16,7 +16,7 @@ function Home() {
 
       <section className="history-section">
         <div className="section-heading">
-          <p>Mas de 10 anos de experiencia</p>
+          <p>Mas de 10 años de experiencia</p>
           <h2>Soluciones de calidad para cada espacio</h2>
         </div>
         <p>
